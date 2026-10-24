@@ -1,0 +1,28 @@
+# ===================== DSPE gitignore =====================
+
+# --- Runtime artifacts (generated on every run) ---
+# Scan reports, secedit export, HTML dashboard
+Reports/
+# Daily log files
+Logs/
+# Pre-remediation snapshots
+Backups/
+# GUI user state (applied rule IDs, startup preferences)
+Policies/gui-settings.json
+
+# --- Compiled binary ---
+# The GUI wrapper is distributed via GitHub Releases, not committed.
+# Build it from DSPE-GUI.ps1 (e.g. with ps2exe) for your own deployments.
+*.exe
+
+# --- Windows junk ---
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
